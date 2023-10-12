@@ -1,2 +1,3 @@
 # flashcardsApp
-Web app que permite a los usuarios crear flashcards a partir de un archivo
+Proyecto personal de desarrollar una app que usa la API de openai para generar flashcards de estudio a raíz de un pdf.
+publicada en https://beta.flashstudy.tech
