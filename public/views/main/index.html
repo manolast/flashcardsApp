@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Study easily - Flashstudy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./F.png">
+</head>
+
+<body class="bg-light">
+    <nav class="navbar custom-navbar-shadow sticky-top bg-light text-start">
+        <h2 class="ms-5 navbar-brand"><a href="#firstSection">FLASHSTUDY<span class="tld-nav">.tech</span></a></h2>
+        <a href="/pricing">Pricing</a>
+        <button>Start now for free</button>
+    </nav>
+    <div class="container px-md-5 maincontent first-section mt-5" id="firstSection">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <h1 class="mx-auto text-center display-1 my-5"> PDF to Anki in <span id="master"> seconds</span>
+                </h1>
+                <h3 class="mx-5 text-center -4">Turn your infinitely long PDF into a full Anki deck using AI
+                </h3>
+            </div>
+        </div>
+        <div class="container my-5">
+            <form class="waitlist-form" id="idForm1">
+                <div class="row gx-1 justify-content-center">
+                    <div class="col-md-auto mt-2 mt-md-0">
+                        <button type="submit" class="btn btn-primary" id="buttonSendMail">Start now for free</button>
+                    </div>
+                </div>
+            </form>
+            <p class="success-message" id="successMessage"></p>
+        </div>
+        <p class="success-message"></p>
+    </div>
+    <div class="container-fluid second-section my-5">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="section-heading">Studying with flashcards has never been easier</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div
+                        class="card d-flex flex-column justify-content-start align-items-center h-100 my-3 mx-1 text-center">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-clock-history" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z" />
+                                    <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z" />
+                                    <path
+                                        d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
+                                </svg>
+                            </span>
+                            <h2 class="card-title">Save Time</h2>
+                            <p class="card-text">You only have to focus on studying. No time-consuming preparation
+                                required.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div
+                        class="card d-flex flex-column justify-content-start align-items-center h-100 my-3 mx-1 text-center">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z" />
+                                </svg>
+                            </span>
+                            <h2 class="card-title">Seamless Integration</h2>
+                            <p class="card-text">Export your flashcards directly to Anki with just a few clicks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div
+                        class="card d-flex flex-column justify-content-start align-items-center h-100 my-3 mx-1 text-center">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z" />
+                                </svg>
+                            </span>
+                            <h2 class="card-title">Boost Your Learning Efficiency</h2>
+                            <p class="card-text">Optimize your study sessions and improve your learning efficiency.
+                                Focus on reviewing the flashcards and let us handle the creation process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mx-5" id="secondCTA">
+        <h3 class="h3Pink">By students for students</h3>
+        <p>Best of all? You can use it for free</p>
+        <div class="container my-5">
+            <form class="waitlist-form" id="idForm2">
+                <div class="row gx-1 justify-content-center">
+                    <div class="col-md-auto">
+                        <input type="button" class="btn btn-primary" id="email" name="email"
+                            value="Start now (it's free)" required>
+                    </div>
+                    <div class="col-md-auto mt-2 mt-md-0">
+                        <button type="submit" class="btn btn-primary" id="buttonSendMail">See pricing</button>
+                    </div>
+                </div>
+            </form>
+            <p class="success-message" id="successMessage2"></p>
+        </div>
+    </div>
+    <div class="container my-5" id="pricing-section">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="section-heading">Pricing plans for every need</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div
+                    class="card d-flex flex-column justify-content-start align-items-center h-100 my-3 mx-1 text-center">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title">Basic</h5>
+                        <p class="card-text">You only have to focus on studying. No time-consuming preparation
+                            required.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div
+                    class="card d-flex flex-column justify-content-start align-items-center h-100 my-3 mx-1 text-center">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z" />
+                            </svg>
+                        </span>
+                        <h2 class="card-title">Seamless Integration</h2>
+                        <p class="card-text">Export your flashcards directly to Anki with just a few clicks.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div
+                    class="card d-flex flex-column justify-content-start align-items-center h-100 my-3 mx-1 text-center">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-lightning-charge" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09zM4.157 8.5H7a.5.5 0 0 1 .478.647L6.11 13.59l5.732-6.09H9a.5.5 0 0 1-.478-.647L9.89 2.41 4.157 8.5z" />
+                            </svg>
+                        </span>
+                        <h2 class="card-title">Boost Your Learning Efficiency</h2>
+                        <p class="card-text">Optimize your study sessions and improve your learning efficiency.
+                            Focus on reviewing the flashcards and let us handle the creation process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Contact: contact@flashstudy.tech | <a href="https://x.com/manolasti" target="_blank">Twitter</a>
+        </p>
+        <p>&copy; 2023 flashstudy.tech. All rights reserved.</p>
+    </footer>
+    <script src="./client.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

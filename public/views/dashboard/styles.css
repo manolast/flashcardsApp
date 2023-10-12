@@ -1,0 +1,96 @@
+#drop-area {
+    border: 2px dashed grey;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.dragover {
+    border: 2px solid rgba(227, 61, 208, 1) !important;
+    background-color: rgba(227, 61, 208, 0.2)
+        /* border: 2px solid rgba(66, 135, 245, 1) !important;
+    background-color: rgba(66, 135, 245, 0.2) */
+}
+
+@media (min-width: 576px) {
+    .dropzone-text {
+        padding: 5rem !important;
+    }
+}
+@media (max-width: 767px) {
+    .width-100 {
+        width: 100% !important;
+    }
+  }
+
+#main-card{
+    max-width: 878px;
+}
+
+.navbar-brand {
+    font-family: 'REM', sans-serif;
+}
+
+h2 a {
+    color: inherit;
+    /* Heredar el color del texto del elemento padre */
+    text-decoration: none;
+    /* Añadir un subrayado al enlace */
+
+}
+
+.tld-nav {
+    font-size: 0.7rem;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+}
+
+input[type="text"] {
+    border: 2px solid grey !important;
+}
+
+#nameDropdown,
+#idDownloadButton {
+    color: #e33dd0;
+    font-weight: 600;
+    border: 2px solid rgba(227, 61, 208, 1);
+}
+
+#nameDropdown:hover,
+#idDownloadButton:hover {
+    background-color: #e33dd0;
+    color: white;
+    /* border-color: white; */
+}
+
+.pink-button {
+    background-color: #e33dd0;
+    color: white;
+    font-weight: 500;
+    border: solid 0.1px #e33dd0 !important;
+}
+
+.pink-button:hover {
+    color: white;
+    background-color: #872379;
+}
+
+#idFileInput {
+    display: none;
+}
+
+
+.text-light-custom {
+    color: grey;
+    font-weight: 450;
+}
+
+#idHelpSVG{
+    cursor: pointer;
+    color: #e33dd0;
+
+}
+#idHelpSVG:hover{
+    color:#962286;
+}

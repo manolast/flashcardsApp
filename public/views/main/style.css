@@ -1,0 +1,247 @@
+body{
+  margin:0;
+  padding: 0;
+}
+p{
+  margin: 0 !important;
+}
+.tld-nav{
+  font-size: 0.7rem;
+}
+
+/* .maincontent .container {
+  padding: 0; /* Set padding to 0 to remove the horizontal padding */
+  /* margin: 0; /* Set margin to 0 to remove the horizontal margin */
+h2 a{
+    color: inherit; /* Heredar el color del texto del elemento padre */
+    text-decoration: none; /* Añadir un subrayado al enlace */
+
+}
+.first-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 70vh;
+}
+.navbar-brand{
+  font-family: 'REM', sans-serif;
+}
+.custom-navbar-shadow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Custom shadow effect */
+}
+
+h1{
+  font-family: 'REM', sans-serif;
+  font-weight: 500 !important;
+}
+#master{
+  color:#e33dd0
+}
+
+.maincontent{
+  max-width: 700px;
+}
+  
+  button[type="submit"] {
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #666;
+  }
+  .success-message {
+    text-align: center;
+    color: #e33dd0;
+    display: none;
+  }
+  .bold{
+    font-weight: bold;
+  }
+
+  /* .first-section {
+    overflow-y: hidden; /* Hide the overflow content */
+  
+
+  .section-heading {
+    font-size: 32px; /* Increasing the font size */
+    font-weight: bold; /* Adding bold font weight */
+    color: #e33dd0;/* Changing the text color to a darker shade */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); /* Adding a text shadow effect */
+  }
+
+
+.card{
+    padding: 20px; /* Adding padding to the cards */
+}
+.card-title {
+    font-weight: bold;
+    font-size: 24px; /* Increasing the font size for the card titles */ 
+}
+svg .svg-pink{
+  color:#e33dd0 !important
+}
+
+@media (min-width: 992px) {
+  .card-group {
+      display: flex;
+  }
+  .card {
+      flex: 1;
+  }
+}
+
+#secondCTA{
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.h3Pink{
+  /* color: #e33dd0; */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: white; /* Add your desired background color for the footer */
+  padding: 20px; /* Add some padding to the footer */
+  text-align: center; /* Center the content inside the footer */
+}
+
+ul.no-bullets {
+  list-style-type: none; /* Remove default list-style bullets */
+  font-size: 20px;
+}
+
+.pink-svgs-fill{
+  color: white;
+  background-color: #e33dd0;
+}
+.bold-p{
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.h3-bold{
+  font-weight: 650;
+}
+.pink-nav-button{
+  background-color: #e33dd0 !important;
+  border: solid 0.02rem #e33dd0 !important;
+  color: white !important;
+  font-weight: 500 !important;
+  padding: 0.3rem 0.8rem !important;
+}
+.pink-button {
+  background-color: #e33dd0 !important;
+  border: solid 0.02rem #e33dd0 !important;
+  color: white !important;
+  font-weight: 500 !important;
+  padding: 0.5rem 0.8rem !important;
+}
+
+.pink-button:hover, .pink-nav-button:hover{
+    color: #e33dd0 !important;
+    background-color: white !important;
+}
+
+.white-button{
+  color: #e33dd0 !important;
+  padding: 0.5rem 0.8rem !important;
+  border:solid 0.002rem rgba(227, 61, 208, 0.5) !important;
+}
+.white-button:hover{
+  background-color: rgb(174, 174, 174) !important;
+}
+.text-grey{
+  color:#e067d4;
+}
+.custom-list ul {
+  display: inline-block;
+}
+
+/* .custom-list{
+  list-style: none;
+}
+
+.custom-list> li{
+  clear: left;
+  padding: .5rem 0;
+}
+ 
+
+.custom-list > li:before {
+  content: "";
+  height: 0.1rem;
+  width: 0.1rem;
+  display: block;
+  float: left;
+  margin-left: -1.5rem;
+  background: url("./check-circle-fill.svg") no-repeat center; 
+  background-size: cover;
+} */
+.custom-list > li{
+  list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="rgba(227, 61, 208,0.6  )" class="bi bi-check-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" /> </svg>');
+}
+
+.custom-list > li::marker {
+    font-size: 0.8rem;
+  }
+.max-w-14rem{
+  max-width: 14rem;
+}
+.pointer-events-none {
+  pointer-events: none;
+}
+/* Custom CSS class to replicate the Tailwind CSS shadow effect */
+.custom-shadow-toggle {
+  box-shadow: 0 1px 2px 0 rgba(125, 99, 255, 0.1), 0 1px 3px 0 rgba(125, 99, 255, 0.06);
+  transform: scale(1);
+  transition: transform 150ms ease-in-out;
+  background-color: #e33dd0;
+}
+/* Custom CSS class to replicate the Tailwind CSS button styles */
+.custom-toggle-button {
+  position: relative;
+  flex: 1;
+  font-size: 14px; /* Equivalent to Tailwind's text-sm */
+  font-weight: 500; /* Equivalent to Tailwind's font-medium */
+  height: 32px; /* Equivalent to Tailwind's h-8 */
+  padding: 0 12px; /* Adjust the padding as needed */
+  border-radius: 9999px; /* Equivalent to Tailwind's rounded-full */
+  outline: none;
+  border: none;
+  background-color: transparent;
+  transition: color 150ms ease-in-out;
+}
+
+/* Focus styles */
+.custom-toggle-button:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(125, 99, 255, 0.2) !important; /* Equivalent to Tailwind's focus-visible:ring */
+}
+.custom-toggle-button.active > span{
+  color: rgb(193, 193, 193);  
+}
+.custom-toggle-button:not(.active) > span{
+  color: grey;
+}
+.custom-toggle-button:focus-visible::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -3px !important;
+  right: -3px !important;
+  bottom: -3px !important;
+  left: -3px !important;
+  border-radius: 9999px;
+  /* border: 2px solid rgba(99, 102, 241, 0.2) ; */
+  background-color: transparent !important; /* Equivalent to Tailwind's focus-visible:ring */
+  z-index: -1;
+}
+.custom-toggle-button.active {
+  color: #ffffff; /* Your desired text color for the active button */
+}
+
+.translate-x-0 {
+  transform: translateX(0) !important;
+}
+.translate-x-full {
+  transform: translateX(100%) !important;
+}

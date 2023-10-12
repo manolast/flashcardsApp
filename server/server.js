@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 
+
 const app = express();
 
 app.set('view_engine', 'ejs');
@@ -18,26 +19,32 @@ const config = {
     secret: process.env.SECRET,
     baseURL: process.env.BASE_URL,
     clientID: process.env.CLIENT_ID,
-    issuerBaseURL: process.env.ISSUER
+    issuerBaseURL: process.env.ISSUER,
 };
 
+app.use(express.static(path.join(__dirname, '/../public'), { "Content-Type": "text/javascript" }));
 
-// app.use(express.static('./../public'))
 app.use(auth(config));
 app.use(bodyParser.json({
     verify: (req, res, buf) => {
       req.rawBody = buf
     }
-  }))
+}))
+
+app.use((error, req, res, next) => {
+    error.statusCode = error.statusCode || 500;
+    error.status = error.status || 'error';
+    res.status(error.statusCode).json({
+        status: error.statusCode,
+        message: error.message
+    })
+})
 
 app.use('/', indexRouter);
 
-
-db.once('open', () => {
-    app.listen(3000, () => {
-      console.log('Server started on port 3000');
-    });
-  });
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
 
 const { get } = require(".");
 
